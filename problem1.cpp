@@ -30,17 +30,14 @@ int main() {
                 idx -= n; 
             }
             
-            
             int char_val = s[idx] - 'a';
             
            
             if ((seen & (1 << char_val)) != 0) {
                 break; 
             }
-            
 
             seen |= (1 << char_val);
-            
             
             current_sum += (char_val + 1);
             
@@ -51,7 +48,6 @@ int main() {
         }
     }
 
-    // Output the maximum sum found
     cout << max_sum << "\n";
 
     return 0;
